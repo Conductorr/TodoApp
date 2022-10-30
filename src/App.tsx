@@ -39,7 +39,7 @@ function App() {
   };
 
   const clear = () => {
-    setTodos([]);
+    setTodos(todos.filter((todos) => !todos.status));
   };
 
   return (

@@ -35,6 +35,10 @@
       height: 100%;
       margin: 6rem auto 0 0;
       padding-left: 40px;
+
+      @include mediaMaxWidth(813px) {
+        margin: 3rem 10.8rem 2rem 0;
+      }
     }
   }
 
