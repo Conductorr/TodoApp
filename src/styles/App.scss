@@ -1,0 +1,98 @@
+@import "src/styles/fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  min-height: 25rem;
+  width: 50rem;
+  box-shadow: 0 11px 9px 3px #888888;
+
+  &-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-todos {
+      display: flex;
+      height: 100%;
+      margin: 6rem auto 0 0;
+      padding-left: 40px;
+    }
+  }
+
+  &-heading {
+    font: 100 120px/36px $primaryFont;
+    color: pink;
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    float: bottom;
+    height: 10vh;
+    gap: 20px;
+
+    &__heading {
+      font: 300 20px $primaryFont;
+      color: #888888;
+    }
+
+    &-buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    &__button {
+      cursor: pointer;
+      border: none;
+      font: 200 20px $primaryFont;
+      color: #8d8d91;
+
+      &:focus {
+        border: 1px solid lightgray;
+      }
+    }
+
+    &-bottom {
+      &__button {
+        cursor: pointer;
+        border: none;
+        font: 200 20px $primaryFont;
+        color: #8d8d91;
+      }
+    }
+  }
+}
+
+.testing {
+  border: 1px solid grey;
+  width: 795px;
+  background-color: white;
+  height: 5px;
+  margin: 0 auto;
+
+  &-footer {
+    border-top: 0;
+    border-bottom: 1px solid grey;
+    width: 785px;
+    background-color: white;
+    height: 4px;
+    margin: 0 auto;
+  }
+}

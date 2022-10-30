@@ -1,0 +1,39 @@
+@import "src/styles/fonts";
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.complete {
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
+  color: lightgray;
+}
+
+h1 {
+  font: 200 45px $primaryFont;
+  color: #1f1f20;
+}
+
+input[type="checkbox"] {
+  display: grid;
+  background-color: grey;
+  place-content: center;
+  border: none !important;
+  margin-top: 10px;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 2em;
+  height: 2em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  border-radius: 5px;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
