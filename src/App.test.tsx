@@ -1,7 +1,7 @@
 import App from "./App";
 import { render, getByTestId, fireEvent, screen } from "@testing-library/react";
 
-export const addTodo = (list, item) => [item, ...list];
+export const addTodo = (list: Array<object>, item: object) => [item, ...list];
 
 export const deleteTodo = jest.fn();
 
