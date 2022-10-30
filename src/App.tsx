@@ -84,8 +84,10 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="testing"></div>
-      <div className="testing-footer"></div>
+      <div>
+        <div className="testing"></div>
+        <div className="testing-footer"></div>
+      </div>
     </div>
   );
 }

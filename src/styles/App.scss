@@ -1,4 +1,5 @@
 @import "src/styles/fonts";
+@import "src/styles/media";
 
 * {
   margin: 0;
@@ -18,6 +19,11 @@
   min-height: 25rem;
   width: 50rem;
   box-shadow: 0 11px 9px 3px #888888;
+
+  @include mediaMaxWidth(813px) {
+    width: 100%;
+    box-shadow: unset;
+  }
 
   &-main {
     display: flex;
@@ -47,6 +53,10 @@
     float: bottom;
     height: 10vh;
     gap: 20px;
+
+    @include mediaMaxWidth(813px) {
+      flex-direction: column;
+    }
 
     &__heading {
       font: 300 20px $primaryFont;
@@ -87,6 +97,10 @@
   height: 5px;
   margin: 0 auto;
 
+  @include mediaMaxWidth(813px) {
+    display: none;
+  }
+
   &-footer {
     border-top: 0;
     border-bottom: 1px solid grey;
@@ -94,5 +108,9 @@
     background-color: white;
     height: 4px;
     margin: 0 auto;
+
+    @include mediaMaxWidth(813px) {
+      display: none;
+    }
   }
 }

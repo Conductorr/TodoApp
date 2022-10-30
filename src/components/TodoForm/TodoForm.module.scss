@@ -19,8 +19,8 @@ h1 {
 input[type="checkbox"] {
   display: grid;
   background-color: grey;
+  accent-color: white;
   place-content: center;
-  border: none !important;
   margin-top: 10px;
 }
 
@@ -28,6 +28,7 @@ input[type="checkbox"]::before {
   content: "";
   width: 2em;
   height: 2em;
+  border: 1px solid black;
   transform: scale(0);
   transition: 120ms transform ease-in-out;
   box-shadow: inset 1em 1em var(--form-control-color);
@@ -36,4 +37,9 @@ input[type="checkbox"]::before {
 
 input[type="checkbox"]:checked::before {
   transform: scale(1);
+  fill: red;
+}
+
+input[type="checkbox"]:hover {
+  fill: none;
 }

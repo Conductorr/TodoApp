@@ -24,7 +24,7 @@ function AddTodoForm({ addTodo }: AddTodoProps) {
         className={styles.form_input}
         type="text"
         value={newTodo}
-        placeholder="Новое задание..."
+        placeholder="New todo..."
         onChange={handleChange}
       />
       <button
@@ -32,7 +32,7 @@ function AddTodoForm({ addTodo }: AddTodoProps) {
         type="submit"
         onClick={handleSubmit}
       >
-        Добавить
+        Add
       </button>
     </form>
   );
